@@ -69,3 +69,58 @@ print(existing_set)
 `dup = {}`: 빈 dict가 생성 (빈 set가 아님)
 `dup = set()`: 빈 set 생성
 
+### Valid Anagram
+Anagram 뜻: 문자의 종류와 개수가 모두 같고, 순서만 다른 경우
+
+#### sting 
+baisc examples
+```python
+course = "Python"
+print(len(course))  # 6
+print(course[0])  # P
+print(course[-1]) # n
+print(course[0:3])  # Pyt
+print(course[0:]) # Python
+print(course[:3]) # Pyt
+print(course[:])  # Python
+
+course = "Python \nProgramming"
+print(course)
+#Python 
+#Programming
+
+first = "Yujin"
+last = "Song"
+full = first + " " + last
+print(full) #Yujin Song
+full2 = f"{first} {last}" # replaced at runtime
+print(full2)  #Yujin Song
+full3 = f"{len(first)} {last}"
+print(full3)  #5 6
+```
+
+useful functions
+```python
+course1 = "Python programming"
+print(course1)
+print(course1.upper())  #PYTHON PROGRAMMING
+print(course1.lower())  #python programming
+print(course1.title())  #Python Programming
+print(course1.find("g"))  #10
+print(course1.find("G"))  #-1
+print(course1.replace("g", "j"))  #Python projramminj
+print("pro" in course1) #True
+print("swift" not in course1) #True
+```
+
+#### List - 내일 공부 더하기
+정렬하는 방법
+```python
+import string
+
+# For lowercase: ['a', 'b', ..., 'z']
+alphabet_list = list(string.ascii_lowercase)
+
+# For uppercase: ['A', 'B', ..., 'Z']
+uppercase_list = list(string.ascii_uppercase)
+```
